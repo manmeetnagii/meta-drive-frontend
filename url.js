@@ -1,1 +1,1 @@
-export const url = 'meta-drive-server.vercel.app';
+export const url = "https://meta-drive-backend.onrender.com"
