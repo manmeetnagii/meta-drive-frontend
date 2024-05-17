@@ -163,9 +163,9 @@ const HomePage = () => {
           responseType: "blob",
         }
       );
-      const url = window.URL.createObjectURL(new Blob([response.data]));
+      const urll = window.URL.createObjectURL(new Blob([response.data]));
       const link = document.createElement("a");
-      link.href = url;
+      link.href = urll;
       link.setAttribute("download", file);
       document.body.appendChild(link);
       link.click();
@@ -538,9 +538,7 @@ const HomePage = () => {
                                 <TableCell>
                                   <div
                                     className=" text-[18px]"
-                                    onClick={() => {
-                                      openFile(file);
-                                    }}
+                                   
                                   >
                                     {file}
                                   </div>
